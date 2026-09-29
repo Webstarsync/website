@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStarSync — Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: radial-gradient(circle at top, #1a1d25 0%, #0a0b10 58%);
+        color: #eceff4;
+        padding: 2rem 1rem;
+      }
+
+      main {
+        width: min(92vw, 900px);
+        padding: 3rem 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        font-weight: 500;
+        letter-spacing: 0.04em;
+      }
+
+      h2 {
+        margin: 2rem 0 0.75rem;
+        font-size: clamp(1.2rem, 2.8vw, 1.6rem);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+
+      p,
+      li {
+        margin: 0;
+        font-size: clamp(1rem, 2.2vw, 1.1rem);
+        line-height: 1.6;
+        color: #bfc7d6;
+      }
+
+      p + p,
+      ul + p,
+      p + ul,
+      ul + ul {
+        margin-top: 0.75rem;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.4rem;
+      }
+
+      .effective-date {
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        color: #d9e2ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy WebStarSync</h1>
+      <p class="effective-date"><strong>Effective Date:</strong> September 29, 2026</p>
+
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy governs the use of the WebStarSync application ("the App").
+        The App is an integration tool designed to fetch reviews from the Google Business
+        API and sync them directly into Webflow CMS. This policy explains how we collect,
+        use, and protect your data when you authorize the App to connect your Google and
+        Webflow accounts.
+      </p>
+
+      <h2>2. Information We Access and Collect</h2>
+      <p>
+        To provide the synchronization service, WebStarSync requires authorization via OAuth
+        2.0 for both Google and Webflow. We access and process the following information:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Business Profile Data:</strong> Specifically, we read customer
+          reviews and basic profile information from the Google Business locations you
+          authorize.
+        </li>
+        <li>
+          <strong>Webflow CMS Data:</strong> We access your Webflow site's CMS collections
+          and schema to create, update, or map the synced reviews.
+        </li>
+        <li>
+          <strong>Authentication Tokens:</strong> We securely store OAuth 2.0 access and
+          refresh tokens for both Google and Webflow to maintain the automated
+          synchronization process without requiring manual logins.
+        </li>
+      </ul>
+
+      <h2>3. How We Use Your Data</h2>
+      <p>The data we access is used strictly to provide the App's core functionality:</p>
+      <ul>
+        <li>Fetching new or updated customer reviews from your Google Business Profile.</li>
+        <li>
+          Transforming and pushing those reviews as CMS items into your connected Webflow
+          project.
+        </li>
+        <li>
+          Logging synchronization status (e.g., success or error logs) to ensure the service
+          runs reliably.
+        </li>
+      </ul>
+
+      <h2>4. Google API Services User Data Policy (Limited Use)</h2>
+      <p>
+        WebStarSync's use and transfer to any other app of information received from Google
+        APIs will adhere to the Google API Services User Data Policy, including the Limited
+        Use requirements.
+      </p>
+      <p>Specifically:</p>
+      <ul>
+        <li>
+          We only read Google Business reviews to transfer them to your designated Webflow
+          CMS.
+        </li>
+        <li>
+          We do not use your Google data for targeted advertising, nor do we sell, rent, or
+          trade this data to third-party data brokers.
+        </li>
+        <li>
+          Human access to your data is strictly limited to troubleshooting integration errors,
+          and only with your explicit consent.
+        </li>
+      </ul>
+
+      <h2>5. Data Storage and Third-Party Transfer</h2>
+      <p>
+        WebStarSync acts as a bridge. While we store your OAuth authentication tokens
+        securely to keep the connection alive, the actual review data (text, author names,
+        ratings) is transmitted directly to Webflow. By using the App, you acknowledge that
+        your Google reviews will be stored within your Webflow account and become subject to
+        Webflow’s Privacy Policy and Terms of Service.
+      </p>
+
+      <h2>6. Revoking Access and Data Deletion</h2>
+      <p>
+        You maintain full control over your accounts. You can revoke WebStarSync's access at
+        any time:
+      </p>
+      <ul>
+        <li>
+          For Google: By visiting your Google Account Security settings
+          (<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>).
+        </li>
+        <li>
+          For Webflow: By removing the App from your Webflow Workspace Integrations
+          settings.
+        </li>
+      </ul>
+      <p>
+        Upon revoking access, WebStarSync will immediately lose the ability to sync data,
+        and we will delete your authentication tokens from our systems.
+      </p>
+
+      <h2>7. Contact Information</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy or our data
+        practices, please contact us at: contact@webstarsync.com.
+      </p>
+    </main>
+  </body>
+</html>
